@@ -97,7 +97,7 @@
 						record.getLatLng(), 
 						{
 							icon: L.icon({
-								iconUrl: '../resources/water_drop.png',
+								iconUrl: 'http://1001stories.org/1001-Stories-Map/resources/water_drop.png',
 								iconSize: [30,30]
 								//	tooltipAnchor: [15, -30]
 							}),
@@ -113,7 +113,7 @@
 						{
 
 							icon: L.icon({
-								iconUrl: '../resources/water_drop.png',
+								iconUrl: 'http://1001stories.org/1001-Stories-Map/resources/water_drop.png',
 								iconSize: [20,20]
 							}),
 							riseOnHover: true
