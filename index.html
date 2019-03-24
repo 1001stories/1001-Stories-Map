@@ -47,8 +47,8 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-	<link type="image/ico" rel="shortcut icon" href="//resources.esri.com/favicon.ico">
-	<link type="image/ico" rel="icon"  href="//resources.esri.com/favicon.ico">
+	<link type="image/ico" rel="shortcut icon" href="resources/1001_stories_logo.png">
+	<link type="image/ico" rel="icon"  href="resources/1001_stories_logo.png">
 
 	<!--
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -63,7 +63,8 @@
   		integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
   		crossorigin=""/>
 
-	<link rel="stylesheet" href="https://unpkg.com/mapbox-gl@0.44.1/dist/mapbox-gl.css"/>
+	<!--<link rel="stylesheet" href="https://unpkg.com/mapbox-gl@0.44.1/dist/mapbox-gl.css"/>-->
+	<link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css"/>
 
 	<link rel="stylesheet" href="//unpkg.com/leaflet-easybutton@2.0.0/src/easy-button.css" />		
 	<link rel="stylesheet" href="css/main.css">	
@@ -77,13 +78,17 @@
   			crossorigin=""></script>
 
 	<!-- Load Esri Leaflet from CDN -->
-	<script src="https://unpkg.com/esri-leaflet@2.2.3/dist/esri-leaflet.js"
+	
+	<!--<script src="https://unpkg.com/esri-leaflet@2.2.3/dist/esri-leaflet.js"
     		integrity="sha512-YZ6b5bXRVwipfqul5krehD9qlbJzc6KOGXYsDjU9HHXW2gK57xmWl2gU6nAegiErAqFXhygKIsWPKbjLPXVb2g=="
+    		crossorigin=""></script>-->
+    <script src="https://unpkg.com/esri-leaflet@2.2.4/dist/esri-leaflet.js"
+    		integrity="sha512-tyPum7h2h36X52O2gz+Pe8z/3l+Y9S1yEUscbVs5r5aEY5dFmP1WWRY/WLLElnFHa+k1JBQZSCDGwEAnm2IxAQ=="
     		crossorigin=""></script>
 
 	<!-- load the latest release from the cdn automatically -->
-	<script src="https://unpkg.com/mapbox-gl@0.44.1/dist/mapbox-gl.js"></script>
-	<script src="https://unpkg.com/esri-leaflet-vector@1.0.7/dist/esri-leaflet-vector.js"></script>
+	<script src="https://unpkg.com/mapbox-gl@0.53.1/dist/mapbox-gl.js"></script>
+	<script src="https://unpkg.com/esri-leaflet-vector@2.0.2/dist/esri-leaflet-vector.js"></script>
 
 	<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
 
@@ -139,7 +144,7 @@
 		    	<a id="button-show"></a>
 		    	<div id="filterWidgets">
 		    		<div> 
-			    		<label>Only list milestones in current map</label>
+			    		<label>Only list stories in current map</label>
 			    		<div id="cheat"></div>
 						<label class="switch">
 							<input type="checkbox">

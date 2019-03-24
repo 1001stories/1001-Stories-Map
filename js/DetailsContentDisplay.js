@@ -34,24 +34,4 @@ DetailsContentDisplay.prototype.load = function(_selected, details, touch)
 				.attr("src", ""+_selected.getStreetView()+"")
 				)
 		.appendTo($("#details #content"));
-
-	/*
-	$("<section>").attr("id", "stats")
-		.append(
-			$("<div>").append(
-				$("<span>").html("DATE")
-			).append(
-				$("<span>").html(_selected.getDate())
-			)
-		)
-		.appendTo($("#details #content"));
-	*/
-
-	/*
-			$("<div>").attr("id", "pano-container")
-				.css(
-					"background-image", 
-					"url('"+_selected.getPreviewImage(Record.PREVIEW_IMAGE_SIZE_LARGE)+"')"
-				)
-	*/
 };

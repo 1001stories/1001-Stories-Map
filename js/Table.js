@@ -22,18 +22,18 @@ function Table(ul)
 					function(str){return str.trim();}
 				);
 										
-				var formatOptions = {year: 'numeric', month: 'long', day: 'numeric'};
+				//var formatOptions = {year: 'numeric', month: 'long', day: 'numeric'};
 
 				$(ul).append(
 
 					$("<li>")
 						.append($("<div>").addClass("thumb").css("background-image", "url('"+value.getPreviewImage()+"')"))
 						.append($("<div>").addClass("info")
+							.append($("<div>").html(value.getDisplayName()))
 							.append($("<div>").html(titleParts.shift()))
 							.append($("<div>").html(titleParts.shift()))
 							.append($("<div>"))
 							.append($("<div>").html(value.getDate()))
-							.append($("<div>").html(value.getDisplayName()))
 						)
 						.append($("<a>").addClass("goto")
 							.append($("<img>").attr("src", "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMS41NCAzOS41NCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5vbmU7c3Ryb2tlOiNmZmY7c3Ryb2tlLWxpbmVjYXA6c3F1YXJlO3N0cm9rZS1taXRlcmxpbWl0OjEwO3N0cm9rZS13aWR0aDoyLjVweDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFzc2V0IDk8L3RpdGxlPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PHBvbHlsaW5lIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxLjc3IDM3Ljc3IDE5Ljc3IDE5Ljc3IDEuNzcgMS43NyIvPjwvZz48L2c+PC9zdmc+"))
