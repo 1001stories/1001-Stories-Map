@@ -95,5 +95,10 @@ Record.prototype.getStreetView = function()
 	return this._json.street_view;
 };
 
+Record.prototype.getQuote = function()
+{
+	return this._json.quote;
+};
+
 Record.PREVIEW_IMAGE_SIZE_SMALL = "small";
 Record.PREVIEW_IMAGE_SIZE_LARGE = "large";

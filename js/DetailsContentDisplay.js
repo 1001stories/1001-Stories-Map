@@ -5,9 +5,9 @@ function DetailsContentDisplay()
 
 DetailsContentDisplay.prototype.load = function(_selected, details, touch)
 {
-	/*$("<section>").attr("id", "remarks")
-		.addClass("narrative").html(_selected.getBody())
-		.appendTo($("#details #content"));*/
+	$("<section>").attr("id", "remarks")
+		.addClass("narrative").html(_selected.getQuote())
+		.appendTo($("#details #content"));
 
 	$("<section>").attr("id", "encounters")
 		.append($("<h6>").html("STORY"))

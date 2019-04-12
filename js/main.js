@@ -98,7 +98,8 @@
 						{
 							icon: L.icon({
 								iconUrl: 'http://1001stories.org/1001-Stories-Map/resources/water_drop.png',
-								iconSize: [30,30]
+								//iconUrl: '../resources/water_drop.png',
+								iconSize: [20,30]
 								//	tooltipAnchor: [15, -30]
 							}),
 							riseOnHover: true
@@ -114,7 +115,8 @@
 
 							icon: L.icon({
 								iconUrl: 'http://1001stories.org/1001-Stories-Map/resources/water_drop.png',
-								iconSize: [20,20]
+								//iconUrl: '../resources/water_drop.png',
+								iconSize: [14,20]
 							}),
 							riseOnHover: true
 						}
